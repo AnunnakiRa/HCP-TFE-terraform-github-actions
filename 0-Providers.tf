@@ -1,12 +1,12 @@
-terraform { 
-  cloud { 
-    
-    organization = "KingOfZamunda" 
+terraform {
+  cloud {
 
-    workspaces { 
-      name = "LizzosLunch" 
-    } 
-  } 
+    organization = "KingOfZamunda"
+
+    workspaces {
+      name = "LizzosLunch"
+    }
+  }
 
   required_providers {
     aws = {
@@ -15,7 +15,6 @@ terraform {
     }
   }
 }
-
 
 provider "aws" {
   region = "us-east-1"
