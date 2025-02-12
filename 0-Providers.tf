@@ -1,13 +1,12 @@
-terraform {
+terraform { 
+  cloud { 
+    
+    organization = "KingOfZamunda" 
 
-  cloud {
-    organization = "KingOfZamunda"
-
-    workspaces {
-      name = "LizzosLunch"
-    }
-  }
-
+    workspaces { 
+      name = "LizzosLunch" 
+    } 
+  } 
 
   required_providers {
     aws = {
